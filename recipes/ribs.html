@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Smoky ribs</title>
+    <style>
+    li::before {
+        content: "Step " coutner(step);
+        counter-increment: step;
+    }
+    </style>
 </head>
 <body>
     <h1>Slow-Cooker Barbecue Ribs</h1> 
@@ -28,7 +34,7 @@
 
     <h4>Directions</h4>
 
-    <ol style="content: 'Step ' counter(name);">
+    <ol>
         <li>Prehead overn to 400 degrees F (200 degres C)</li>
         <li>Season ribs with salt and pepper. Place in a shallow baking pan. Brown in over 15 minutes. 
             Turn over, and brown another 15 minutes; drain fat.</li>

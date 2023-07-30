@@ -4,7 +4,13 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Sushi recipe</title>
+        <title>Sushi recipe</title>    
+        <style>
+            li::before {
+                content: "Step " coutner(step);
+                counter-increment: step;
+            }
+        </style>
     </head>
 
     <body>
@@ -35,7 +41,7 @@
         <h4>Directions</h4>
 
         
-        <ol style="content: 'Step ' counter(name);">
+        <ol>
             <li>Soak rice for 4 hours. Drain rice and cook in a rice cooker with 2 cups of water. Rice must be slightly dry as vinegar 
                 will be added later</li>
             <li>Immediately after rice is cooked, mix in rice wine vinegar; spread rice on a plate until completely cool.</li>
