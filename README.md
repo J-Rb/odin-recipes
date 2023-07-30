@@ -1,2 +1,4 @@
-# odin-recipies
-Odin Project Recipie App
+# odin-recipes
+Odin Project Recipe App
+
+A small site, with multiple pages to showcase recipes.
