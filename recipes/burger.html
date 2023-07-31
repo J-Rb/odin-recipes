@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <title>Sizzling Burger Recipe</title>
     <style>
-        li::before {
-            content: "Step " coutner(step);
-            counter-increment: step;
+        ol {
+            list-style-type: none;
+            counter-reset: count 0;
+            /* list-style-position: outside; Doesn't apply because this only applies to markers */
+           
+        }
+        ol > li::before {
+            content:"Step " counter(count) ". ";
+            counter-increment: count;
+            /* padding: 3px;
+            text-align: left;
+            position: relative; */
+            text-align:left;
+            padding-right:6px;
+            width:5%;
+            position: absolute;
+            left: 0;
+        }
+        ol > li {
+            position: relative;
+            padding-left: 4%;
         }
     </style>
 </head>

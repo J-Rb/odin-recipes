@@ -6,9 +6,20 @@
         <meta charset="utf-8">
         <title>Sushi recipe</title>    
         <style>
-            li::before {
-                content: "Step " coutner(step);
-                counter-increment: step;
+            ol {
+                counter-reset: my-counter 0;
+                list-style-type: none;
+                margin-left: 2%;
+            }
+        
+            ol > li::marker {
+              content: "Step " counter(my-counter) ". ";
+              padding-left: 5%;
+            }
+        
+            ol > li {
+              counter-increment: my-counter;
+              padding-left: 1%;
             }
         </style>
     </head>
