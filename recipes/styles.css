@@ -30,7 +30,11 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    background-image: url(../images/hollow.png);
+    background-image: /* radial-gradient(circle, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6)), */url(../images/hollow.png);
+    /* border-radius: 40px;
+    box-shadow: 0px 0px 5px #fff; */
+    -webkit-filter: drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.5));
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.6))  drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.5))  drop-shadow(0px 0px 35px rgba(255, 255, 255, 0.4)) 
   }
 
 .recipes {
@@ -43,10 +47,41 @@ img {
     padding-top: 90px;
     font-size: 100px;
     background-position: 0 20px;
+    text-shadow: 0 0 1px #000, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px /* #fff, 0 0 50px  #fff, 0 0 60px #fff, 0 0 70px #fff */;
     /* list-style-image: url(../images/hollow.png); The image marker displays as is, and cannot be resized. */
 }
 
+.index {
+    background-color: black;
+}
+
+.title {
+    color: whitesmoke;
+    font-size: 200px;
+    text-align: center;
+    font-family: 'Brush Script MT Arial', cursive;
+    text-shadow: 0 0 1px #000, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px
+}
+
 a {
-    color: red;
+    color: white;
     text-decoration: navajowhite ;
+}
+
+img {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+100% { 
+    -webkit-transform: rotate(360deg); 
+    transform:rotate(360deg); 
+} 
 }
