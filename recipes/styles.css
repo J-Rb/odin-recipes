@@ -47,7 +47,7 @@ img {
     padding-top: 90px;
     font-size: 100px;
     background-position: 0 20px;
-    text-shadow: 0 0 1px #000, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px /* #fff, 0 0 50px  #fff, 0 0 60px #fff, 0 0 70px #fff */;
+    text-shadow: 0 0 1px #000, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px  #fff /*, 0 0 50px  #fff, 0 0 60px #fff, 0 0 70px #fff */;
     /* list-style-image: url(../images/hollow.png); The image marker displays as is, and cannot be resized. */
 }
 
@@ -60,7 +60,7 @@ img {
     font-size: 200px;
     text-align: center;
     font-family: 'Brush Script MT Arial', cursive;
-    text-shadow: 0 0 1px #000, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px
+    text-shadow: 0 0 1px #000, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff 
 }
 
 a {
